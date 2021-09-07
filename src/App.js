@@ -18,20 +18,10 @@ function App() {
       <button onClick={increment}>Increment</button>
       <button onClick={decrement}>Decrement</button>
 
-      
       <Aboutus increment={increment} />
       <Error Decrement={decrement} />
     </div>
   );
-
-  // (
-  //   <div className="App">
-  //     <Aboutus />
-  //     <Services />
-  //     <Testimonials />
-  //     <Error />
-  //   </div>
-  // );
 }
 
 export default App;
