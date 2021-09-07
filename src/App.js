@@ -26,7 +26,7 @@ function App() {
   // (
   //   <div className="App">
   //     <Aboutus />
-  // bla lba blsa baf hahahhahahha thek ha nai theek? ok chal gaya lagta ha
+  // bla lba blsa baf hahahhahahha thek ha nai theek? ok chal gaya lagta ha waqai oye fuck you
   //     <Error />
   //   </div>
   // );
