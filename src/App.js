@@ -22,6 +22,14 @@ function App() {
       <Error Decrement={decrement} />
     </div>
   );
+
+  // (
+  //   <div className="App">
+  //     <Aboutus />
+
+  //     <Error />
+  //   </div>
+  // );
 }
 
 export default App;
