@@ -1,35 +1,17 @@
-import React, { useState } from "react";
-import Aboutus from "./Components/Aboutus";
-import Error from "./Components/Error";
+import React from "react";
+import AddMovie from "./Components/AddMovie";
+import { MovieProvider } from "./Components/Context/MovieContext";
+import MovieList from "./Components/MovieList";
+import Nav from "./Components/Nav";
 
-function App() {
-  const [counter, setCounter] = useState(0);
-
-  const increment = () => {
-    setCounter(counter + 1);
-  };
-  const decrement = () => {
-    setCounter(counter - 1);
-  };
+const App = () => {
   return (
-    <div>
-      <h2>I am from App.js</h2>
-      <h1>{counter}</h1>
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
-
-      <Aboutus increment={increment} />
-      <Error Decrement={decrement} />
-    </div>
+    <MovieProvider>
+      <Nav />
+      <AddMovie />
+      <MovieList />
+    </MovieProvider>
   );
-
-  // (
-  //   <div className="App">
-  //     <Aboutus />
-  // bla lba blsa baf hahahhahahha thek ha nai theek? ok chal gaya lagta ha waqai oye fuck you
-  //     <Error />
-  //   </div>
-  // );
-}
+};
 
 export default App;
